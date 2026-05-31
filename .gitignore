@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Packaging
+*.zip
+*.crx
+*.pem
+
+# Node (none used, but just in case)
+node_modules/

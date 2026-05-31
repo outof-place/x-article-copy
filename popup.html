@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="icons/icon48.png" alt="" />
+    <div class="titles">
+      <h1>X Article Copy</h1>
+      <span id="status">Wczytuję…</span>
+    </div>
+  </header>
+
+  <textarea id="preview" spellcheck="false" placeholder="Treść artykułu pojawi się tutaj…"></textarea>
+
+  <div class="actions">
+    <button id="copy" class="primary" disabled>📋 Kopiuj</button>
+    <button id="save" disabled>💾 Zapisz .md</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#xac-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2147483647;
+  padding: 10px 16px;
+  font: 600 14px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: #fff;
+  background: #1d9bf0;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+#xac-btn:hover { background: #1a8cd8; }
+#xac-btn:active { transform: scale(0.97); }
+
+#xac-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 72px;
+  z-index: 2147483647;
+  display: none;
+  max-width: 300px;
+  padding: 10px 14px;
+  font: 500 13px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: #fff;
+  background: #00ba7c;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+}
+#xac-toast.err { background: #f4212e; }
