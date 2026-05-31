@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="icons/icon128.png" width="96" alt="X Article Copy" />
-
-# X Article Copy
+<img src="docs/banner.png" alt="X Article Copy — copy any X article or post as clean Markdown" width="840" />
 
 **Copy any X (Twitter) article or post to your clipboard — or save it as a `.md` file — in clean Markdown.**
 
@@ -19,7 +17,7 @@ Reads the page from your logged-in session, so it works behind the login wall. N
 
 ## ✨ What it does
 
-You're reading an X article you want to keep. Three clicks in the browser usually gets you a soup of UI text, "Subscribe to Premium" footers, and broken formatting. This grabs the **actual content** instead.
+You're reading an X article you want to keep. Copy-pasting usually gets you a soup of UI text, "Subscribe to Premium" footers, and broken formatting. This grabs the **actual content** instead.
 
 - 📋 **One-click copy** — floating button on the page, content lands in your clipboard as Markdown
 - 🖼️ **Popup with preview** — see and **edit** the Markdown before you take it
@@ -27,6 +25,30 @@ You're reading an X article you want to keep. Three clicks in the browser usuall
 - 🧹 **Strips the cruft** — removes X chrome: like/repost buttons, avatars, the "Subscribe to Premium" footer, post timestamp, view count, "View quotes" (PL + EN)
 - 🔒 **Private by design** — everything happens locally in your browser. Nothing is sent anywhere.
 - 🪶 **No dependencies** — plain JS, ~12 KB. No build step, no tracking, no analytics.
+
+## 🎬 Demo
+
+<div align="center">
+
+<!-- Drop a screen recording at docs/demo.gif and uncomment the line below: -->
+<!-- <img src="docs/demo.gif" alt="X Article Copy in action" width="720" /> -->
+
+_Demo GIF coming soon._ 🎥
+
+</div>
+
+<details>
+<summary><b>Record your own in ~2 minutes (macOS)</b></summary>
+
+1. Open an X article while logged in.
+2. Press **⌘⇧5** → record a selected region. Capture: open the popup → click **Copy** → click **Save .md** (~6–8 s). Save the `.mov`.
+3. Convert to an optimized GIF with ffmpeg:
+   ```bash
+   ffmpeg -i demo.mov -vf "fps=12,scale=900:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 docs/demo.gif
+   ```
+4. Save it as `docs/demo.gif` and uncomment the `<img>` line above.
+
+</details>
 
 ## 📥 Install
 
@@ -73,7 +95,7 @@ If X changes its DOM and something breaks, it's almost always one of these in `c
 - `SKIP_TESTIDS` / `SKIP_TAGS` — UI elements to drop
 - `JUNK_LINE` — line patterns to remove (footer, date, views…)
 
-Redraw the icon with `node generate-icons.js` (colors/shape live at the top of the file — pure Node, no deps).
+Redraw the icon with `node generate-icons.js`, or the social banner from `docs/banner.html` (both pure Node / HTML, no deps).
 
 ## 🌍 Note on language
 
