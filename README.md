@@ -30,10 +30,9 @@ You're reading an X article you want to keep. Copy-pasting usually gets you a so
 
 <div align="center">
 
-<!-- Drop a screen recording at docs/demo.gif and uncomment the line below: -->
-<!-- <img src="docs/demo.gif" alt="X Article Copy in action" width="720" /> -->
+<img src="docs/demo.gif" alt="X Article Copy in action — extracting an X article into the popup as clean Markdown" width="760" />
 
-_Demo GIF coming soon._ 🎥
+_Open an X article → the popup shows the clean Markdown → copy or save._
 
 </div>
 
